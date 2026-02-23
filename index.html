@@ -7,46 +7,59 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #fff;
-    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: #111;
+    color: white;
 }
 
 header {
-    background-color: #8B0000;
-    padding: 30px 20px;
+    background: url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d') center/cover;
+    padding: 80px 20px;
+    text-align: center;
 }
 
-h1 {
-    margin: 0;
+header h1 {
+    background: rgba(0,0,0,0.6);
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
     font-size: 32px;
-    letter-spacing: 2px;
 }
 
 .menu {
-    padding: 30px 20px;
+    padding: 30px 15px;
+    display: grid;
+    gap: 20px;
 }
 
-.menu-item {
-    background-color: #1c1c1c;
-    margin: 15px auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
+.card {
+    background: #1c1c1c;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    align-items: center;
 }
 
 .price {
-    color: #FFD700;
+    color: gold;
     font-weight: bold;
 }
+
 footer {
-    margin-top: 30px;
-    padding: 15px;
-    font-size: 14px;
+    text-align: center;
+    padding: 20px;
     color: #aaa;
 }
 </style>
@@ -59,30 +72,85 @@ footer {
 </header>
 
 <div class="menu">
-    <div class="menu-item">
-        <span>Patlıcanlı Domatesli Fıstıklı Çöp Şiş Ciğer Beyti</span>
-        <span class="price">600 TL</span>
-    </div>
 
-    <div class="menu-item">
-        <span>Tavuk & Kanat</span>
-        <span class="price">400 TL</span>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1625943555403-7c62f4b9e70a">
+<div class="card-content">
+<span>Patlıcanlı</span>
+<span class="price">600 TL</span>
+</div>
+</div>
 
-    <div class="menu-item">
-        <span>Adana Kebap</span>
-        <span class="price">500 TL</span>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+<div class="card-content">
+<span>Domatesli</span>
+<span class="price">600 TL</span>
+</div>
+</div>
 
-    <div class="menu-item">
-        <span>Urfa Kebap</span>
-        <span class="price">500 TL</span>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<div class="card-content">
+<span>Fıstıklı</span>
+<span class="price">600 TL</span>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1613145993480-cb7f4a3f1c88">
+<div class="card-content">
+<span>Çöp Şiş</span>
+<span class="price">600 TL</span>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+<div class="card-content">
+<span>Ciğer</span>
+<span class="price">600 TL</span>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617196035154-1e1c1c1e1e1e">
+<div class="card-content">
+<span>Beyti</span>
+<span class="price">600 TL</span>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+<div class="card-content">
+<span>Tavuk & Kanat</span>
+<span class="price">400 TL</span>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600891963933-2d1d3d1d3d1d">
+<div class="card-content">
+<span>Adana Kebap</span>
+<span class="price">500 TL</span>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600891963933-2d1d3d1d3d1d">
+<div class="card-content">
+<span>Urfa Kebap</span>
+<span class="price">500 TL</span>
+</div>
+</div>
+
 </div>
 
 <footer>
-    Afiyet Olsun 🔥
+Afiyet Olsun 🔥
 </footer>
 
 </body>
 </html>
+
